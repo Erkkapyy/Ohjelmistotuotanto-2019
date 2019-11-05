@@ -9,7 +9,6 @@ public class Main {
         ApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
 
         Kauppa kauppa = ctx.getBean(Kauppa.class);
-        Varasto varasto = ctx.getBean(Varasto.class);
         Kirjanpito kirjanpito = ctx.getBean(Kirjanpito.class);
 
         // kauppa hoitaa yhden asiakkaan kerrallaan seuraavaan tapaan:
